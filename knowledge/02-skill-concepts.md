@@ -17,6 +17,6 @@
 
 ### Penting bagi konteks pengguna ini
 
-ChatGPT sudah menyediakan **skill-creator** pada akun dan antarmuka yang memenuhi syarat. Skill Builder yang dirancang di sini bukan klaim menggantikan kemampuan tersebut. Nilai tambah yang diusulkan ialah disiplin riset, pemetaan kebutuhan, standar bukti, evaluasi pemicu yang berimbang, dan audit risiko dalam Bahasa Indonesia. Perlu diuji agar deskripsinya tidak bertabrakan dengan skill-creator atau terpilih untuk setiap percakapan mengenai AI. [S1][S3][S11]
+Sebagian host dapat menyediakan tooling native untuk membuat atau memvalidasi Skill. Skill Builder tidak bergantung pada tooling tersebut: desain, scaffolding, metadata, validasi, evaluasi, dan repair tersedia sebagai satu workflow internal. Tooling host diperlakukan sebagai pemeriksaan kompatibilitas tambahan bila tersedia. Tetap uji deskripsi dan trigger agar Skill Builder tidak terpilih untuk setiap percakapan mengenai AI. [S1][S3][S11]
 
 ---
