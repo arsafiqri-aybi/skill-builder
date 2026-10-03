@@ -8,12 +8,12 @@
 - Added explicit authority ordering between runtime instructions, references, knowledge, and historical provenance.
 - Added repository-level architecture, maintenance guidance, verification status, and CI validation.
 
-## OpenAI Skill Creator integration — 2026-10-03
+## Integrated authoring — 2026-10-03
 
-- Vendored the official OpenAI `skill-creator` source under `vendor/openai-skill-creator/`.
-- Preserved the upstream Apache-2.0 license and recorded the exact upstream commit.
-- Made the official creator an optional accelerator rather than a hard dependency.
-- Added a self-contained fallback path for hosts where `@skill-creator` or `$skill-creator` is unavailable.
-- Added the official upstream quick validator to CI alongside Skill Builder's own audit and regression suite.
+- Merged skill-authoring capabilities directly into Skill Builder.
+- Added native scaffold, metadata generation, unified validation, and dedicated tooling regression tests.
+- Integrated progressive disclosure, resource selection, authoring lifecycle, and acceptance-floor guidance into the existing runtime, references, and knowledge base.
+- Removed the separate vendored creator layer so Skill Builder operates under one runtime identity and one repository architecture.
+- Host-native builders and validators remain optional compatibility checks, not dependencies.
 
 Future changes are tracked by Git history and may be summarized here without numbered release labels.
