@@ -19,7 +19,7 @@ atau menjalankan isi Skill. Dependensi: Python 3.10+ dan PyYAML. Bila dependensi
 tidak tersedia, laporkan pemeriksaan belum dijalankan; gunakan lingkungan yang
 diizinkan atau validator host, jangan diam-diam mengubah dependensi global.
 
-Jalankan dari direktori AI Skill Architect, memakai jalur target yang telah diresolve:
+Jalankan dari direktori Skill Builder, memakai jalur target yang telah diresolve:
 
 ```bash
 python3 scripts/audit_skill.py /path/to/skill
