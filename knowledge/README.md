@@ -1,4 +1,4 @@
-# AI Skill Architect Knowledge Base
+# Skill Builder Knowledge Base
 
 This directory contains the deeper knowledge that supports the runtime Skill. It is intentionally modular so ChatGPT, Codex, and other agents can retrieve only what is relevant instead of loading the entire knowledge base into context.
 
@@ -25,7 +25,7 @@ This directory contains the deeper knowledge that supports the runtime Skill. It
 | `09-tools-scripts-security.md` | Adding tools/scripts safely and handling permissions or prompt injection |
 | `10-evaluation.md` | Designing static, trigger, behavioral, artifact, and installation tests |
 | `11-failure-diagnostics.md` | Diagnosing common Skill failures and choosing the right fix |
-| `12-product-specification.md` | AI Skill Architect's product contract and intended outputs |
+| `12-product-specification.md` | Skill Builder's product contract and intended outputs |
 | `14-learning-checklist-glossary.md` | Training, readiness checks, and terminology |
 | `15-sources-maintenance.md` | Source catalog and refresh requirements |
 
