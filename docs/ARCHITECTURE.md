@@ -1,9 +1,9 @@
 # Repository Architecture
 
-AI Skill Architect is stored as one capability repo: runtime Skill + supporting knowledge + references + deterministic tooling + evaluation.
+Skill Builder is stored as one capability repo: runtime Skill + supporting knowledge + references + deterministic tooling + evaluation.
 
 ```text
-ai-skill-architect/
+skill-builder/
 ├── SKILL.md                  # canonical runtime instructions
 ├── agents/openai.yaml        # host-facing display metadata
 ├── assets/                   # reusable UI/output assets
