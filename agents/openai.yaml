@@ -1,7 +1,7 @@
 interface:
-  display_name: AI Skill Architect
+  display_name: Skill Builder
   short_description: Design, build, validate, and evolve reliable AI Skills
-  default_prompt: Gunakan $ai-skill-architect untuk merancang, membuat, memperbaiki, atau mengaudit Skill dari kebutuhan berikut dan memeriksa hasilnya.
+  default_prompt: Gunakan $skill-builder untuk merancang, membuat, memperbaiki, atau mengaudit Skill dari kebutuhan berikut dan memeriksa hasilnya.
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:
