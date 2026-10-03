@@ -1,16 +1,20 @@
 # Pemeriksaan dan operasi platform
 
-## Ikuti host
+## Ikuti host tanpa dependency wajib
 
-Baca `skill-creator` yang berlaku ketika membuat, mengedit, atau memasang Skill.
-Gunakan direktori personal yang ditentukan host. Jangan menyimpulkan bahwa
-lokasi tidak bisa ditulis dari nama jalur saja. Pertahankan direktori dengan
-identitas yang dikelola host; kesamaan folder dengan `name` berlaku untuk paket
-portabel baru, bukan alasan mengganti identitas instalasi.
+Gunakan aturan host yang benar-benar tersedia untuk lokasi, pemasangan,
+persistensi, dan metadata. Skill Builder membawa tooling authoring sendiri untuk
+scaffold, metadata, dan pemeriksaan statis; capability host tambahan dapat dipakai
+bila membantu, tetapi bukan syarat agar desain Skill dapat berjalan.
 
-Gunakan validator host lebih dahulu. Simpan dan periksa status persisten sesuai
-prosedur host. Jangan menyimpan salinan skill terpasang sebagai artefak baru
-yang tidak diminta, dan jangan menyebut sukses sebelum verifikasi berhasil.
+Pertahankan direktori dengan identitas yang dikelola host. Kesamaan folder dengan
+`name` hanya diwajibkan ketika membangun paket portabel yang memang memakai
+aturan tersebut. Jangan mengganti identitas instalasi hanya demi menyamakan nama
+folder.
+
+Jika host punya validator atau installer native, gunakan sebagai pemeriksaan
+tambahan dan verifikasi hasil persistennya. Jangan menyebut pemasangan berhasil
+hanya karena paket lokal valid.
 
 ## Pemeriksa tambahan
 
@@ -73,3 +77,30 @@ Jangan menganggap metadata dependensi memberi akses atau izin baru.
 - Permintaan paket: periksa format yang didukung host saat itu. ZIP berisi
   folder Skill tidak otomatis berarti sudah terpasang, dan mengganti nama
   ekstensi tidak mengubah format isinya.
+
+
+## Tool authoring bawaan Skill Builder
+
+### Scaffold baru
+
+```bash
+python3 scripts/init_skill.py my-skill --path /target --description "Jelaskan pekerjaan dan kapan digunakan."
+```
+
+Tambahkan `--resources references,scripts,assets` hanya untuk resource yang memang dibutuhkan. Script tidak menimpa direktori yang sudah ada.
+
+### Metadata host
+
+```bash
+python3 scripts/build_metadata.py /path/to/my-skill
+```
+
+Nilai tampilan dapat dioverride dengan opsi CLI. Metadata yang dihasilkan harus tetap selaras dengan `SKILL.md`.
+
+### Validasi
+
+```bash
+python3 scripts/validate_skill.py /path/to/my-skill --portable
+```
+
+Validator terpadu memanggil pemeriksaan statis Skill Builder dan menghasilkan exit code yang bisa dipakai CI. Ini tidak membuktikan kualitas perilaku, keamanan menyeluruh, atau keberhasilan instalasi.
