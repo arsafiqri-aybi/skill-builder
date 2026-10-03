@@ -3,7 +3,7 @@
 ## Verified in this repository migration
 
 - Package contents were inspected before modification.
-- Canonical identity was migrated consistently to `AI Skill Architect` / `ai-skill-architect`.
+- Canonical identity was migrated consistently to `Skill Builder` / `skill-builder`.
 - Local Markdown references and host metadata are checked by the bundled static auditor.
 - Auditor regression tests are executed locally after migration.
 - The repository is checked for remaining deprecated identity strings.
