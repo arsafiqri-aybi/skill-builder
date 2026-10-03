@@ -9,11 +9,13 @@ Skill Builder turns a real user need into a reusable AI Skill with explicit trig
 - `SKILL.md` — canonical runtime instructions.
 - `references/` — concise guidance used selectively during execution.
 - `knowledge/` — deeper modular knowledge base for architecture, research, evaluation, tools, safety, and maintenance.
+- `scripts/init_skill.py` — create a minimal Skill scaffold.
+- `scripts/build_metadata.py` — generate host-facing metadata from Skill identity.
+- `scripts/validate_skill.py` — unified validation entry point.
 - `scripts/audit_skill.py` — read-only static auditor for Skill packages.
-- `scripts/test_audit_skill.py` — regression tests for the auditor.
+- `scripts/test_audit_skill.py` and `scripts/test_skill_tooling.py` — regression tests.
 - `agents/openai.yaml` — host-facing metadata.
 - `evaluation/STATUS.md` — what has and has not been verified.
-- `vendor/openai-skill-creator/` — vendored snapshot of OpenAI's official Skill Creator, including its Apache-2.0 license, reference, and helper scripts.
 
 ## Design principles
 
@@ -32,9 +34,9 @@ Skill Builder turns a real user need into a reusable AI Skill with explicit trig
 
 Designed to be portable across ChatGPT, Codex, API/agent environments, and other hosts that can consume Agent Skill-style instructions. Actual installation and invocation semantics remain host-dependent and must be verified in the target environment.
 
-## Skill Creator integration
+## Integrated authoring
 
-Skill Builder does not require the host to expose `skill-creator`. When the official creator is available, Skill Builder can use it for platform-native scaffolding and validation. When it is unavailable, use the vendored snapshot through `references/skill-creator-integration.md`; Skill Builder remains responsible for design and evaluation either way.
+Skill Builder contains its own authoring workflow for design, scaffolding, metadata generation, validation, evaluation, repair, and packaging. Host-native builders or validators may be used as compatibility checks when available, but they are not required for the core workflow.
 
 ## Knowledge loading
 
