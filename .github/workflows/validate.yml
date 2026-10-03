@@ -18,5 +18,7 @@ jobs:
         run: python -m pip install -r skill-builder/requirements-dev.txt
       - name: Run static Skill audit
         run: python skill-builder/scripts/audit_skill.py skill-builder --portable
+      - name: Run OpenAI Skill Creator quick validation
+        run: python skill-builder/vendor/openai-skill-creator/scripts/quick_validate.py skill-builder
       - name: Run auditor regression tests
         run: python skill-builder/scripts/test_audit_skill.py
