@@ -41,6 +41,6 @@ Satu Skill sebaiknya mempunyai **tujuan pengguna yang dapat dikenali**. Jika dua
 | Format stabil tetapi isi berubah | Templat dengan parameter dan titik keputusan |
 | Operasi rapuh atau harus identik | Skrip dengan validasi masukan/keluaran |
 
-Rancangan AI Skill Architect menggunakan kebebasan tinggi untuk menjelajahi kebutuhan, menengah untuk menyusun berkas, dan rendah untuk validasi struktur. Ini rekomendasi arsitektur, bukan aturan platform.
+Rancangan Skill Builder menggunakan kebebasan tinggi untuk menjelajahi kebutuhan, menengah untuk menyusun berkas, dan rendah untuk validasi struktur. Ini rekomendasi arsitektur, bukan aturan platform.
 
 ---
