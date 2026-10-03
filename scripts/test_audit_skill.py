@@ -14,7 +14,7 @@ from audit_skill import audit
 class AuditTests(unittest.TestCase):
     def setUp(self):
         checkout = Path(__file__).resolve().parents[2]
-        self.temp = tempfile.TemporaryDirectory(prefix=".ai-skill-architect-tests-", dir=checkout)
+        self.temp = tempfile.TemporaryDirectory(prefix=".skill-builder-tests-", dir=checkout)
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name) / "sample"
         self.root.mkdir()
