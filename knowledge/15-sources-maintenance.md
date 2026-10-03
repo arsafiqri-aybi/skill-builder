@@ -12,7 +12,7 @@
 | [S6] | [OpenAI API, “Evaluation best practices”](https://developers.openai.com/api/docs/guides/evaluation-best-practices) | Tujuan evaluasi, dataset, metrik, penilaian manusia, kasus tepi; antarmuka produk evaluasi dapat berubah |
 | [S7] | [OpenAI, “The Instruction Hierarchy”](https://openai.com/index/the-instruction-hierarchy/) dan [Model Spec](https://model-spec.openai.com/2025-04-11.html) | Prioritas instruksi dan perlakuan teks tak tepercaya; model spec versi tertaut berpenanggalan |
 | [S8] | [OpenAI API, “Safety in building agents”](https://developers.openai.com/api/docs/guides/agent-builder-safety) dan [OpenAI API, “Skills: risks and safety”](https://developers.openai.com/api/docs/guides/tools-skills) | Prompt injection, izin alat, validasi, pemeriksaan Skill; contoh Agent Builder berada dalam transisi produk |
-| [S9] | [OpenAI, “Why language models hallucinate”](https://openai.com/index/why-language-models-hallucinate/) | Penelitian asli tentang menebak dan ketidakpastian; bukan ukuran akurasi AI Skill Architect |
+| [S9] | [OpenAI, “Why language models hallucinate”](https://openai.com/index/why-language-models-hallucinate/) | Penelitian asli tentang menebak dan ketidakpastian; bukan ukuran akurasi Skill Builder |
 | [S10] | [Liu dkk., “Lost in the Middle: How Language Models Use Long Contexts”, TACL 2024](https://aclanthology.org/2024.tacl-1.9/) | Temuan empiris pada model dan tugas yang diuji; tidak digeneralisasikan sebagai kepastian semua model |
 | [S11] | [OpenAI Developers, “Rethinking skills and prompts for GPT-6 Astra”](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra) | Deskripsi ringkas, pemuatan selektif, dan risiko instruksi terlalu panjang |
 | [S12] | [OpenAI Help Center, “Does ChatGPT tell the truth?”](https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth) | Keterbatasan akurasi dan perlunya memeriksa informasi penting |
@@ -29,4 +29,4 @@
 
 ---
 
-**Akhir berkas.** Keputusan tahap berikutnya yang perlu dipilih pemilik: apakah draf pada §13 akan diwujudkan sebagai Skill pribadi bernama **AI Skill Architect**, divalidasi, diuji, dan dipasang di ChatGPT.
+**Akhir berkas.** Keputusan tahap berikutnya yang perlu dipilih pemilik: apakah draf pada §13 akan diwujudkan sebagai Skill pribadi bernama **Skill Builder**, divalidasi, diuji, dan dipasang di ChatGPT.
