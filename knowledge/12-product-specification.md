@@ -37,3 +37,22 @@ Jika contoh belum tersedia, Skill Builder boleh mengusulkan contoh lalu menandai
 10. **Uji perilaku:** positif, negatif, dan kasus tepi di lingkungan yang tersedia.
 11. **Revisi berdasarkan bukti:** ubah deskripsi jika pemicu salah; ubah isi jika alur salah.
 12. **Serahkan hasil:** ringkasan, bukti uji, batas, dan status pemasangan yang jujur.
+
+### 12.5 Kapabilitas authoring yang terintegrasi
+
+Skill Builder mencakup satu siklus penuh:
+
+**design → scaffold → metadata → implementation → validation → evaluation → repair → packaging**
+
+Kemampuan ini adalah bagian dari Skill Builder sendiri, bukan wrapper terhadap creator lain. Jika host menyediakan builder atau validator native, gunakan sebagai lapisan kompatibilitas tambahan; hasil inti tetap dapat dibangun, diperiksa, dan dipelihara dengan tooling repository sendiri.
+
+Untuk pembuatan baru, default-nya:
+1. rumuskan kontrak dan trigger,
+2. buat scaffold minimum,
+3. isi runtime dan resource yang benar-benar diperlukan,
+4. hasilkan metadata,
+5. validasi statis,
+6. uji behavior dan trigger bila lingkungan memungkinkan,
+7. perbaiki berdasarkan bukti,
+8. paketkan hanya jika diminta.
+
