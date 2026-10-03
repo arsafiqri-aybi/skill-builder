@@ -39,3 +39,15 @@ Dokumentasi OpenAI menegaskan Skill yang dijalankan bersama akses jaringan dan k
 Jangan menyalin isi penuh materi berhak cipta ke Skill tanpa hak pemakaian; gunakan ringkasan yang sah dan tautan. Jangan masukkan kata sandi atau token ke SKILL.md. Untuk layanan pihak ketiga, tentukan data apa yang benar-benar diperlukan. Jika Skill dibagikan, tinjau lagi apakah referensi internal atau templat pribadi ikut terbawa. Persyaratan publikasi dan izin dapat berbeda menurut produk dan workspace; cek ulang sebelum distribusi. [S1][S15]
 
 ---
+
+### 9.5 Tooling authoring bawaan
+
+Tooling internal Skill Builder dibuat deterministik dan dapat diaudit.
+
+- **Initializer** membuat struktur awal yang diminta tanpa menimpa direktori yang sudah ada.
+- **Metadata builder** menghasilkan metadata antarmuka dari identitas Skill.
+- **Validator** membaca dan menilai struktur serta metadata.
+- **Auditor** memeriksa konsistensi berkas, referensi lokal, dan kondisi statis lain.
+
+Setiap tool harus memberi kegagalan yang jelas ketika input tidak sah. Jalur authoring ini membuat Skill Builder tetap dapat membangun dan memeriksa Skill pada lingkungan yang tidak menyediakan creator bawaan.
+
