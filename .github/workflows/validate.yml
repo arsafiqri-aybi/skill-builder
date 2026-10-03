@@ -1,4 +1,4 @@
-name: Validate AI Skill Architect
+name: Validate Skill Builder
 
 on:
   push:
