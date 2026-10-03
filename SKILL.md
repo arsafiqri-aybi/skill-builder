@@ -1,9 +1,9 @@
 ---
-name: ai-skill-architect
+name: skill-builder
 description: Design, build, audit, validate, package, or evolve reusable AI Skills and SKILL.md systems for ChatGPT, Codex, and other agent environments. Use for skill architecture, trigger design, knowledge/reference organization, evaluation, migration, or repair of existing skills; not for simply performing the target domain task.
 ---
 
-# AI Skill Architect
+# Skill Builder
 
 Ubah kebutuhan pengguna menjadi Skill yang menyelesaikan pekerjaan konkret,
 punya batas jelas, dan dapat diperiksa hasilnya. Gunakan bahasa pengguna;
@@ -16,7 +16,7 @@ gunakan Bahasa Indonesia bila tidak ada preferensi lain.
   tidak mengizinkan perubahan. Permintaan memperbarui Skill terpasang sudah
   mengizinkan perbaikan dan penyimpanannya sesuai aturan lingkungan.
 - Gunakan `skill-creator` yang tersedia untuk operasi dan aturan platform.
-  AI Skill Architect menambahkan rancangan dan evaluasi; jangan menggandakan atau
+  Skill Builder menambahkan rancangan dan evaluasi; jangan menggandakan atau
   mengarang mekanisme pemasangan. Gunakan panduan host terkini jika pembuat
   bawaan tidak tersedia.
 - Untuk pembaruan, baca Skill yang benar-benar terpasang beserta berkas yang
