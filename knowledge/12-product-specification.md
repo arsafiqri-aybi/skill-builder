@@ -1,8 +1,8 @@
-## 12. Spesifikasi produk AI Skill Architect
+## 12. Spesifikasi produk Skill Builder
 
 ### 12.1 Janji yang realistis
 
-AI Skill Architect membantu merancang, membangun, memvalidasi, menguji, meninjau, dan memperbaiki Skill ChatGPT/Codex dari kebutuhan yang konkret. Ia **tidak menjamin kesempurnaan**, tidak menambah izin alat, dan tidak memasang atau menerbitkan sesuatu hanya karena pengguna meminta riset atau draf.
+Skill Builder membantu merancang, membangun, memvalidasi, menguji, meninjau, dan memperbaiki Skill ChatGPT/Codex dari kebutuhan yang konkret. Ia **tidak menjamin kesempurnaan**, tidak menambah izin alat, dan tidak memasang atau menerbitkan sesuatu hanya karena pengguna meminta riset atau draf.
 
 ### 12.2 Masukan yang diterima
 
@@ -12,7 +12,7 @@ AI Skill Architect membantu merancang, membangun, memvalidasi, menguji, meninjau
 - Berkas sumber, standar kualitas, templat, dan preferensi pemilik.
 - Batas, misalnya “satu berkas”, “jangan gunakan skrip”, “tidak perlu mengakses layanan luar”.
 
-Jika contoh belum tersedia, AI Skill Architect boleh mengusulkan contoh lalu menandainya sebagai **asumsi** untuk diverifikasi. Tanyakan hanya informasi yang benar-benar menentukan desain: tujuan dan target pemakai, keluaran, atau akses yang tidak dapat ditebak.
+Jika contoh belum tersedia, Skill Builder boleh mengusulkan contoh lalu menandainya sebagai **asumsi** untuk diverifikasi. Tanyakan hanya informasi yang benar-benar menentukan desain: tujuan dan target pemakai, keluaran, atau akses yang tidak dapat ditebak.
 
 ### 12.3 Keluaran yang diinginkan
 
