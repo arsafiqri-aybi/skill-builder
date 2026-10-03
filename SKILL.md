@@ -15,13 +15,12 @@ gunakan Bahasa Indonesia bila tidak ada preferensi lain.
   pemasangan. Permintaan draf/riset saja tidak mengizinkan pemasangan; audit saja
   tidak mengizinkan perubahan. Permintaan memperbarui Skill terpasang sudah
   mengizinkan perbaikan dan penyimpanannya sesuai aturan lingkungan.
-- Jika host menyediakan `skill-creator` resmi, gunakan untuk operasi
-  platform-native seperti scaffolding, metadata, dan validasi yang relevan.
-  Jika tidak tersedia, gunakan [integrasi Skill Creator](references/skill-creator-integration.md)
-  dan snapshot resmi di `vendor/openai-skill-creator/` sebagai fallback.
-  Skill Builder tetap menjalankan rancangan, knowledge architecture, evaluasi,
-  repair/migration, dan quality control sendiri. Jangan mengarang mekanisme
-  pemasangan atau kemampuan host yang tidak tersedia.
+- Skill Builder harus dapat merancang dan membangun Skill secara mandiri.
+  Untuk pembuatan baru, gunakan [panduan desain](references/design.md) dan
+  [tooling](references/tooling.md) untuk memilih struktur, membuat scaffold,
+  menghasilkan metadata host, memvalidasi paket, dan menyiapkan evaluasi.
+  Gunakan kemampuan host tambahan bila tersedia, tetapi jangan jadikan capability
+  eksternal sebagai dependency wajib atau mengarang mekanisme pemasangan.
 - Untuk pembaruan, baca Skill yang benar-benar terpasang beserta berkas yang
   relevan. Cocokkan identitas dan frontmatter, bukan hanya judul arsip lama.
   Pertahankan identitas, preferensi pengguna, aset, dan perubahan di luar tugas.
@@ -54,7 +53,9 @@ gunakan Bahasa Indonesia bila tidak ada preferensi lain.
 
 ## Bangun dan periksa
 
-- Terapkan perubahan di lokasi sah menurut `skill-creator`. Untuk fakta yang
+- Terapkan perubahan di lokasi yang sah menurut host. Untuk Skill baru, scaffold
+  dengan `scripts/init_skill.py` bila eksekusi lokal tersedia; untuk metadata
+  gunakan `scripts/build_metadata.py`; lalu audit hasilnya. Untuk fakta yang
   berubah, verifikasi dokumentasi resmi yang relevan; gunakan
   [sumber dan pemutakhiran](references/sources.md) sebagai titik awal.
   Riset harus menjawab ketidakpastian tertentu, bukan menambah panjang Skill.
