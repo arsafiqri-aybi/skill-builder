@@ -3,7 +3,7 @@
 ### 5.1 Bentuk minimum
 
 ~~~text
-ai-skill-architect/
+skill-builder/
 └── SKILL.md
 ~~~
 
@@ -11,7 +11,7 @@ Isi minimum:
 
 ~~~yaml
 ---
-name: ai-skill-architect
+name: skill-builder
 description: Rancang, tinjau, dan uji Skill ChatGPT dari kebutuhan nyata. Gunakan saat pengguna meminta pembuatan atau perbaikan Skill dan evaluasi pemicunya.
 ---
 
@@ -23,7 +23,7 @@ Spesifikasi terbuka mewajibkan **SKILL.md** dengan YAML frontmatter; **name** ha
 ### 5.2 Komponen tambahan bila perlu
 
 ~~~text
-ai-skill-architect/
+skill-builder/
 ├── SKILL.md
 ├── references/
 │   └── pedoman-validasi.md
@@ -57,6 +57,6 @@ Spesifikasi terbuka menyarankan isi SKILL.md kurang dari sekitar 5.000 token dan
 
 ### 5.4 Dampak syarat “satu berkas” pada proyek ini
 
-Dokumen **AI Skill Architect.md** yang sedang dibaca adalah **satu berkas kajian** yang memuat bahan penelitian lengkap. Menyalin seluruh kajian ini mentah-mentah ke SKILL.md akan membuat Skill berat dan mencampur uraian bagi manusia dengan instruksi bagi AI. Untuk tahap pemasangan kelak, usulan pertama ialah **satu berkas SKILL.md yang diringkas**; jika uji menunjukkan materi tertentu perlu dipisah, keputusan itu harus dikomunikasikan kepada pemilik Skill. Draf awal yang dapat ditinjau ada pada §13. Saat ini **tidak ada Skill terpasang dari berkas ini**.
+Dokumen **Skill Builder.md** yang sedang dibaca adalah **satu berkas kajian** yang memuat bahan penelitian lengkap. Menyalin seluruh kajian ini mentah-mentah ke SKILL.md akan membuat Skill berat dan mencampur uraian bagi manusia dengan instruksi bagi AI. Untuk tahap pemasangan kelak, usulan pertama ialah **satu berkas SKILL.md yang diringkas**; jika uji menunjukkan materi tertentu perlu dipisah, keputusan itu harus dikomunikasikan kepada pemilik Skill. Draf awal yang dapat ditinjau ada pada §13. Saat ini **tidak ada Skill terpasang dari berkas ini**.
 
 ---
