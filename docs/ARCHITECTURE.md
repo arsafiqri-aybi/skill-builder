@@ -12,8 +12,11 @@ skill-builder/
 │   └── history/              # provenance only, never runtime authority
 ├── scripts/                  # deterministic audit tooling + regression tests
 ├── evaluation/               # verification status and test guidance
-├── vendor/
-│   └── openai-skill-creator/ # licensed upstream snapshot + helper scripts
+├── scripts/
+│   ├── init_skill.py          # scaffold generator
+│   ├── build_metadata.py      # metadata generator
+│   ├── validate_skill.py      # validation entry point
+│   └── audit/test tooling
 ├── docs/                     # repository architecture and maintenance
 ├── .github/workflows/        # automated validation
 └── README.md
@@ -27,3 +30,8 @@ skill-builder/
 4. `knowledge/history/` — historical provenance only.
 
 No file in this repository grants additional account permissions, tools, credentials, or platform capabilities.
+
+
+## Integrated authoring layer
+
+Skill Builder owns its authoring lifecycle directly. Design knowledge, scaffolding, metadata generation, static validation, evaluation guidance, repair logic, and packaging decisions live in this repository under one runtime identity. Platform-native tooling can supplement compatibility checks but is not an architectural dependency.
