@@ -8,9 +8,9 @@ Kajian ini mengutamakan tiga kelas sumber: **dokumentasi produk OpenAI** untuk p
 | Perilaku produk | Periksa panduan produk terbaru karena antarmuka dan kelayakan berubah | Pemanggilan eksplisit/otomatis dan ketersediaan ChatGPT [S1][S3] |
 | Temuan penelitian | Berlaku untuk lingkungan yang diuji dalam penelitian, bukan jaminan semua model | Sensitivitas terhadap posisi informasi dalam konteks panjang [S10] |
 | Rekomendasi rekayasa | Gunakan sebagai hipotesis yang perlu dievaluasi pada kasus pengguna | Ambang keberhasilan pengujian yang diajukan pada §10 |
-| Contoh rancangan | Ilustrasi untuk disesuaikan, bukan kemampuan platform yang dijamin | Draf AI Skill Architect pada §13 |
+| Contoh rancangan | Ilustrasi untuk disesuaikan, bukan kemampuan platform yang dijamin | Draf Skill Builder pada §13 |
 
-**Batas kajian:** sumber resmi dapat berubah; penelitian empiris tidak menjamin hasil pada semua model; contoh ambang pengujian di sini adalah **usulan rancangan**, bukan angka resmi OpenAI. Tidak ada pengujian langsung atas AI Skill Architect terpasang pada tahap ini. Pemisahan itu penting supaya dokumen tidak mengklaim sesuatu yang belum diuji.
+**Batas kajian:** sumber resmi dapat berubah; penelitian empiris tidak menjamin hasil pada semua model; contoh ambang pengujian di sini adalah **usulan rancangan**, bukan angka resmi OpenAI. Tidak ada pengujian langsung atas Skill Builder terpasang pada tahap ini. Pemisahan itu penting supaya dokumen tidak mengklaim sesuatu yang belum diuji.
 
 ### Pertanyaan riset yang dijawab
 
@@ -20,6 +20,6 @@ Kajian ini mengutamakan tiga kelas sumber: **dokumentasi produk OpenAI** untuk p
 4. Bagaimana menuliskan instruksi yang efektif tanpa membebani konteks?
 5. Bagaimana menyusun bahan referensi, skrip, dan alat?
 6. Bagaimana menguji pemicu, proses, keluaran, keamanan, dan ketahanan?
-7. Bagaimana merancang AI Skill Architect sebagai Skill yang membangun Skill lain?
+7. Bagaimana merancang Skill Builder sebagai Skill yang membangun Skill lain?
 
 ---
