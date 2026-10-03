@@ -13,6 +13,7 @@ Skill Builder turns a real user need into a reusable AI Skill with explicit trig
 - `scripts/test_audit_skill.py` — regression tests for the auditor.
 - `agents/openai.yaml` — host-facing metadata.
 - `evaluation/STATUS.md` — what has and has not been verified.
+- `vendor/openai-skill-creator/` — vendored snapshot of OpenAI's official Skill Creator, including its Apache-2.0 license, reference, and helper scripts.
 
 ## Design principles
 
@@ -30,6 +31,10 @@ Skill Builder turns a real user need into a reusable AI Skill with explicit trig
 ## Compatibility intent
 
 Designed to be portable across ChatGPT, Codex, API/agent environments, and other hosts that can consume Agent Skill-style instructions. Actual installation and invocation semantics remain host-dependent and must be verified in the target environment.
+
+## Skill Creator integration
+
+Skill Builder does not require the host to expose `skill-creator`. When the official creator is available, Skill Builder can use it for platform-native scaffolding and validation. When it is unavailable, use the vendored snapshot through `references/skill-creator-integration.md`; Skill Builder remains responsible for design and evaluation either way.
 
 ## Knowledge loading
 
