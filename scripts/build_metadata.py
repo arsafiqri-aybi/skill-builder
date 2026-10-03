@@ -2,6 +2,7 @@
 """Generate agents/openai.yaml from a Skill's canonical identity."""
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -41,7 +42,7 @@ def default_short_description(display_name: str) -> str:
 
 
 def yaml_text(value: str) -> str:
-    return yaml.safe_dump(value, allow_unicode=True, default_flow_style=True).strip()
+    return json.dumps(value, ensure_ascii=False)
 
 
 def write_metadata(skill_dir: Path, display_name=None, short_description=None,
