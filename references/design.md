@@ -80,3 +80,38 @@ Jangan mewajibkan gaya berpikir internal atau jumlah langkah untuk semua tugas.
 atau beban yang tidak perlu. Nama model, panjang berkas, dan banyaknya aturan
 bukan ukuran mutu. Untuk klaim perbandingan model atau versi, perlukan uji
 berpasangan dengan tugas, alat, dan kondisi sebanding.
+
+
+## Membangun struktur Skill dari nol
+
+Gunakan progressive disclosure agar context tetap hemat:
+
+1. **Metadata** menjelaskan identitas dan kapan Skill dipilih.
+2. **SKILL.md** menyimpan prosedur inti, keputusan penting, batas, dan syarat selesai.
+3. **references/** menyimpan detail yang hanya dibuka pada kondisi tertentu.
+4. **scripts/** menyimpan operasi deterministik atau pemeriksaan berulang.
+5. **assets/** menyimpan bahan keluaran yang tidak perlu dibaca ke context.
+6. **agents/** menyimpan metadata antarmuka host bila digunakan.
+
+Pilih tingkat kekakuan berdasarkan risiko. Tugas fleksibel cukup memakai prinsip dan heuristik; tugas yang rapuh membutuhkan urutan, validasi, atau script yang lebih deterministik. Jangan membuat struktur hanya karena direktori tersedia.
+
+Untuk Skill baru, mulai dari scaffold minimum, bukan dari template besar. Tambahkan hanya komponen yang punya fungsi nyata. Deskripsi harus memisahkan dengan jelas: kapan Skill ini dipakai, pekerjaan apa yang diselesaikan, dan permintaan mirip apa yang seharusnya tidak memicunya.
+
+## Metadata dan scaffold
+
+Gunakan `scripts/init_skill.py` untuk membuat paket baru ketika filesystem tersedia. Script tersebut membuat identitas dasar dan hanya direktori resource yang benar-benar diminta.
+
+Gunakan `scripts/build_metadata.py` untuk menghasilkan atau memperbarui `agents/openai.yaml` dari identitas Skill. Metadata UI tidak boleh mengubah pekerjaan inti atau memberi kemampuan baru. Setelah scaffolding, isi runtime berdasarkan kontrak tugas dan hapus placeholder yang tersisa sebelum validasi.
+
+## Acceptance floor untuk Skill baru
+
+Sebelum dianggap selesai, pastikan:
+
+- nama dan description valid serta membedakan pekerjaan,
+- runtime berisi workflow yang dapat dijalankan,
+- referensi dan scripts memiliki kondisi pemakaian yang jelas,
+- tidak ada dependency tersembunyi yang tidak tersedia,
+- local links dan metadata konsisten,
+- ada contoh pemicu positif, negatif, dan failure case untuk perubahan besar,
+- validasi statis lulus,
+- klaim behavior atau installation hanya dibuat jika benar-benar diuji.
