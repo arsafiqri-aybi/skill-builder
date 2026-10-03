@@ -74,7 +74,7 @@ memenuhi permintaan; laporan membedakan keberhasilan teruji dari asumsi.
 | Aspek | Keadaan sekarang | Perlu dibuktikan saat pemasangan |
 | --- | --- | --- |
 | Nama | Format skill-builder sesuai pola nama | Kecocokan dengan folder aktual |
-| Deskripsi | Menyebut tujuan dan kondisi pemicu | Tidak bertabrakan dengan skill-creator pada kasus nyata |
+| Deskripsi | Menyebut tujuan dan kondisi pemicu | Tidak bertabrakan dengan tooling authoring lain pada kasus nyata |
 | Isi | Langkah dan hasil cukup spesifik | AI mengikuti urutan penting tanpa menjadi lambat |
 | Bahan pendukung | Tidak diwajibkan | Kebutuhan referensi/scripting setelah uji |
 | Penanganan izin | Mengikuti instruksi pengguna | Tidak memasang pada permintaan draf |
