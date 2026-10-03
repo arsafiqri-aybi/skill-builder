@@ -12,6 +12,8 @@ skill-builder/
 │   └── history/              # provenance only, never runtime authority
 ├── scripts/                  # deterministic audit tooling + regression tests
 ├── evaluation/               # verification status and test guidance
+├── vendor/
+│   └── openai-skill-creator/ # licensed upstream snapshot + helper scripts
 ├── docs/                     # repository architecture and maintenance
 ├── .github/workflows/        # automated validation
 └── README.md
