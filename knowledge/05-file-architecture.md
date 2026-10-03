@@ -60,3 +60,17 @@ Spesifikasi terbuka menyarankan isi SKILL.md kurang dari sekitar 5.000 token dan
 Dokumen **Skill Builder.md** yang sedang dibaca adalah **satu berkas kajian** yang memuat bahan penelitian lengkap. Menyalin seluruh kajian ini mentah-mentah ke SKILL.md akan membuat Skill berat dan mencampur uraian bagi manusia dengan instruksi bagi AI. Untuk tahap pemasangan kelak, usulan pertama ialah **satu berkas SKILL.md yang diringkas**; jika uji menunjukkan materi tertentu perlu dipisah, keputusan itu harus dikomunikasikan kepada pemilik Skill. Draf awal yang dapat ditinjau ada pada §13. Saat ini **tidak ada Skill terpasang dari berkas ini**.
 
 ---
+
+### 5.5 Skill Builder sebagai authoring engine mandiri
+
+Skill Builder tidak hanya mendesain isi Skill; ia juga memiliki jalur authoring sendiri:
+
+- `scripts/init_skill.py` membuat scaffold minimum dari identitas dan description.
+- `scripts/build_metadata.py` membentuk metadata antarmuka dari identitas Skill.
+- `scripts/validate_skill.py` menjadi entry point validasi terpadu.
+- `scripts/audit_skill.py` tetap menjadi pemeriksa statis mendalam.
+
+Scaffold, metadata, dan validasi adalah bagian dari Skill Builder itu sendiri, bukan dependency eksternal. Host-native tooling boleh digunakan sebagai pemeriksaan tambahan, tetapi struktur dasar harus tetap dapat dibuat tanpa tool khusus host.
+
+Saat membuat Skill baru, mulai dari struktur minimum lalu tambahkan `references/`, `scripts/`, atau `assets/` hanya bila ada kebutuhan yang dapat dijelaskan. Ini mencegah template besar yang boros context dan mengurangi file yang tidak pernah dipakai.
+
