@@ -45,7 +45,7 @@ Contoh rancangan lokal, bukan daftar kata pemicu resmi:
 | Selalu gunakan untuk database | Tulis dan tinjau migrasi skema beserta langkah pemulihannya |
 
 Uji variasi bahasa dan maksud. Contoh: “buat laporan rapat” menjalankan domain;
-“buat Skill pembuat laporan rapat” adalah pekerjaan AI Skill Architect. Penyebutan
+“buat Skill pembuat laporan rapat” adalah pekerjaan Skill Builder. Penyebutan
 kata “skill” dalam arti kemampuan manusia juga bukan pemicu otomatis.
 
 ## Instruksi operasional
