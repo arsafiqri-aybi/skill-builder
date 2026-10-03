@@ -24,7 +24,7 @@
 
 1. Apakah jenis akun dan antarmuka pengguna mendukung Skill yang dimaksud. Dokumentasi ChatGPT saat kajian ini menyebut kelayakan menurut paket, produk, dan pengaturan workspace; ketersediaan **tidak boleh ditebak** hanya dari adanya berkas Markdown. [S1]
 2. Apakah spesifikasi metadata, jalur pemasangan, validator, dan cara pemanggilan masih berlaku. [S2][S3]
-3. Apakah draf satu berkas pada §13 perlu menyesuaikan skill-creator bawaan dan Skill lain yang sudah ada. [S1][S11]
+3. Apakah runtime dan tooling authoring Skill Builder perlu menyesuaikan perubahan format host atau Skill lain yang sudah ada. [S1][S11]
 4. Apakah pengguna mengizinkan pembuatan/pemasangan setelah meninjau kajian ini. Sampai ada instruksi tersebut, statusnya tetap **dokumen penelitian**.
 
 ---
