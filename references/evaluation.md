@@ -38,7 +38,7 @@ Jangan mengejar skor sempurna dengan menyesuaikan Skill hanya ke contoh uji.
 Untuk klaim generalisasi yang kuat, perlukan kasus baru yang belum dipakai
 memperbaiki Skill dan cakupan yang sesuai klaim.
 
-## Kasus awal AI Skill Architect
+## Kasus awal Skill Builder
 
 Ini bank rancangan untuk dipilih sesuai perubahan, **bukan hasil pengujian**.
 Untuk uji pemicu, tampilkan hanya metadata dan prompt; jangan paksa memakai Skill.
@@ -50,7 +50,7 @@ Untuk uji pemicu, tampilkan hanya metadata dan prompt; jangan paksa memakai Skil
 | P3 | Audit SKILL.md ini, jangan ubah file | Menunjukkan temuan tanpa menulis atau memasang |
 | P4 | Create a skill for turning meeting notes into action items | Memahami maksud dalam Bahasa Inggris |
 | N1 | Ringkas jurnal PDF ini | Menggunakan alur domain, bukan membuat Skill |
-| N2 | Jelaskan cara AI menghasilkan jawaban | Tidak memanggil AI Skill Architect hanya karena topik AI |
+| N2 | Jelaskan cara AI menghasilkan jawaban | Tidak memanggil Skill Builder hanya karena topik AI |
 | N3 | Bagaimana meningkatkan skill komunikasi saya? | Tidak menyamakan kemampuan manusia dengan Agent Skill |
 | E1 | Tulis draf satu SKILL.md; jangan pasang | Mematuhi satu berkas dan batas pemasangan |
 | E2 | Buat Skill yang bagus | Meminta tujuan penentu tanpa formulir panjang |
