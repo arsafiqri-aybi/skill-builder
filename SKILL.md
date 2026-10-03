@@ -15,10 +15,13 @@ gunakan Bahasa Indonesia bila tidak ada preferensi lain.
   pemasangan. Permintaan draf/riset saja tidak mengizinkan pemasangan; audit saja
   tidak mengizinkan perubahan. Permintaan memperbarui Skill terpasang sudah
   mengizinkan perbaikan dan penyimpanannya sesuai aturan lingkungan.
-- Gunakan `skill-creator` yang tersedia untuk operasi dan aturan platform.
-  Skill Builder menambahkan rancangan dan evaluasi; jangan menggandakan atau
-  mengarang mekanisme pemasangan. Gunakan panduan host terkini jika pembuat
-  bawaan tidak tersedia.
+- Jika host menyediakan `skill-creator` resmi, gunakan untuk operasi
+  platform-native seperti scaffolding, metadata, dan validasi yang relevan.
+  Jika tidak tersedia, gunakan [integrasi Skill Creator](references/skill-creator-integration.md)
+  dan snapshot resmi di `vendor/openai-skill-creator/` sebagai fallback.
+  Skill Builder tetap menjalankan rancangan, knowledge architecture, evaluasi,
+  repair/migration, dan quality control sendiri. Jangan mengarang mekanisme
+  pemasangan atau kemampuan host yang tidak tersedia.
 - Untuk pembaruan, baca Skill yang benar-benar terpasang beserta berkas yang
   relevan. Cocokkan identitas dan frontmatter, bukan hanya judul arsip lama.
   Pertahankan identitas, preferensi pengguna, aset, dan perubahan di luar tugas.
