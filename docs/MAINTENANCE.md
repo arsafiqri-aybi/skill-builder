@@ -15,4 +15,4 @@ Platform-sensitive claims must be rechecked against current authoritative docume
 
 ## Naming
 
-The canonical identity is **AI Skill Architect** and the runtime identifier is **`ai-skill-architect`**. Active files should use only this identity.
+The canonical identity is **Skill Builder** and the runtime identifier is **`skill-builder`**. Active files should use only this identity.
