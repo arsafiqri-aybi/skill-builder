@@ -1,8 +1,8 @@
-# AI Skill Architect
+# Skill Builder
 
 **Design, build, validate, package, and evolve production-grade AI skills with structured knowledge, evaluation, and reusable runtime architecture.**
 
-AI Skill Architect turns a real user need into a reusable AI Skill with explicit triggers, boundaries, inputs, outputs, source-of-truth rules, failure handling, supporting knowledge, deterministic tooling where justified, and evidence-based evaluation.
+Skill Builder turns a real user need into a reusable AI Skill with explicit triggers, boundaries, inputs, outputs, source-of-truth rules, failure handling, supporting knowledge, deterministic tooling where justified, and evidence-based evaluation.
 
 ## What this repository contains
 
@@ -25,7 +25,7 @@ AI Skill Architect turns a real user need into a reusable AI Skill with explicit
 
 ## Runtime identifier
 
-`ai-skill-architect`
+`skill-builder`
 
 ## Compatibility intent
 
