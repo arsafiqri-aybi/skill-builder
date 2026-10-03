@@ -8,11 +8,11 @@ Bagian ini adalah **calon instruksi operasional yang dapat ditinjau**. Ini masih
 
 ~~~markdown
 ---
-name: ai-skill-architect
+name: skill-builder
 description: Rancang, bangun, audit, atau perbaiki Skill ChatGPT/Codex dari contoh kebutuhan nyata. Gunakan saat pengguna meminta Skill baru, perubahan SKILL.md, audit pemicu, atau uji kualitas Skill. Hindari pemanggilan untuk pertanyaan AI umum tanpa pekerjaan pembuatan Skill.
 ---
 
-# AI Skill Architect
+# Skill Builder
 
 ## Tujuan
 
@@ -73,7 +73,7 @@ memenuhi permintaan; laporan membedakan keberhasilan teruji dari asumsi.
 
 | Aspek | Keadaan sekarang | Perlu dibuktikan saat pemasangan |
 | --- | --- | --- |
-| Nama | Format ai-skill-architect sesuai pola nama | Kecocokan dengan folder aktual |
+| Nama | Format skill-builder sesuai pola nama | Kecocokan dengan folder aktual |
 | Deskripsi | Menyebut tujuan dan kondisi pemicu | Tidak bertabrakan dengan skill-creator pada kasus nyata |
 | Isi | Langkah dan hasil cukup spesifik | AI mengikuti urutan penting tanpa menjadi lambat |
 | Bahan pendukung | Tidak diwajibkan | Kebutuhan referensi/scripting setelah uji |
